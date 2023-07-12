@@ -4,21 +4,21 @@ Visitez l'éboche de mon site [Mondistri.re](https://github.com/facebook/create-
 
 ## Dépandences
 
-    npm -i @fortawesome/fontawesome-free
-    npm -i @mikecousins/react-pdf
-    npm -i axios
-    npm -i bootstrap
-    npm -i browserify-zlib
-    npm -i font-awesome
-    npm -i framer-motion
-    npm -i nodemailer
-    npm -i page-flip
-    npm -i react-icons
-    npm -i react-pdf
-    npm -i react-router-dom
-    npm -i react-scroll
-    npm -i react-type-animation
-    npm -i sass
+    npm i @fortawesome/fontawesome-free
+    npm i @mikecousins/react-pdf
+    npm i axios
+    npm i bootstrap
+    npm i browserify-zlib
+    npm i font-awesome
+    npm i framer-motion
+    npm i nodemailer
+    npm i page-flip
+    npm i react-icons
+    npm i react-pdf
+    npm i react-router-dom
+    npm i react-scroll
+    npm i react-type-animation
+    npm i sass
 
 # Memo
 
