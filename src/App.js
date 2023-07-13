@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import './styles/_styles.scss';
+import Home from './screens/Home';
+import Contact from './screens/Contact';
+import NotFound from './screens/notFound';
+import Navbar from './components/UI/Nav/Navbar';
+import NavTop from './components/UI/NavTop/TopBar';
+import Footer from './components/UI/Footer/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          HZH <code>Mondistri.re</code> en construction.
-        </p>
-        <a
-          className="App-link"
-          href="http://mondistri.re"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visitez notre site actuel
-        </a>
-      </header>
-    </div>
+    <div className='App'>
+      <NavTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home/>}  />
+        <Route path="/Contact" element={<Contact/>}  />
+        <Route path="*" element={<NotFound/>}  />
+      </Routes>
+      <Footer />
+      </div>
   );
 }
 

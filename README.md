@@ -6,6 +6,7 @@ Visitez l'éboche de mon site [Mondistri.re](https://nickosss97435.github.io/rea
 
     npm i @fortawesome/fontawesome-free
     npm i @mikecousins/react-pdf
+    npm i @coreui/react
     npm i axios
     npm i bootstrap
     npm i browserify-zlib

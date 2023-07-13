@@ -1,69 +1,124 @@
+@import './colors';
+@import './Fonts';
 
-// *** Import de la font
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
-
-// *** Codes des variants de fonts
-$font-1: 'Nova Round', cursive;
-$font-2: 'Dosis', sans-serif;
-$font-3: 'Josefin Sans', serif;
-
-// *** Nuancier
-$color-1: #ff0000;
-$color-2: #8b0000;
-$color-3: rgb(233, 99, 99);
-$color-4: #ed4f4f;
-$color-5: #ea3636;
-$color-5: #ffee00;
-$white: #ddd;
-$black: #333;
-
-// *** Style particulier
-$borderRadius: 25px;
-$shadow: 0 1px 3px #333;
-$minHeight: 95vh;
-
-// *** Configuration de base
-@mixin verticalCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 body {
-  margin: 1rem auto;
-  max-width: 1200px;
-  font-family: $font-1;
-  color: $black;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
-button {
-  cursor: pointer;
-}
-li {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-  color: $black;
-  cursor: pointer;
-}
-a:visited {
-  color:$black;
-}
-.home, .contact {
-  display: flex;
-
-  @media screen and (max-width: 850px){
-    display: block !important;
+.section-header {
+  .section-title {
+    font-weight: bold;
+    color: #4e4e4e;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    margin-bottom: 2rem;
+    span {
+      color: #ff2424;
+    }
+    &:after {
+      content: '';
+      content: '';
+      display: block;
+      height: 3px;
+      width: 70px;
+      background: #ff2424;
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .section-subtitle {
+    max-width: 700px;
+    color: #6f6f6f;
+    font-size: 0.9rem;
   }
 }
-.homeContent, .contactContent {
-  margin-left: .4rem;
 
-  @media screen and (max-width: 850px){
-    margin-left: 0 !important;
+
+// *** Services ***//
+
+#services {
+  background-color: #f6f8fb;
+}
+.service-box {
+  padding: 2rem;
+  border: 1px solid #eef1f5;
+  // box-shadow: 2px 2px 4px #e9ebef;
+  margin-bottom: 1rem;
+  background: white;
+  .service-icon {
+    font-size: 2rem;
+    color: #ff2424;
+  }
+  .service-body {
+    .service-title {
+      font-size: 1.1rem;
+      color: #4e4e4e;
+      margin-bottom: 1.2rem;
+    }
+    .service-description {
+      font-size: 0.9rem;
+      color: #6f6f6f;
+    }
   }
 }
+
+// *** Header *** //
+@keyframes scrolled {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  @media (min-width: 768px) {
+    position: absolute;
+  }
+  
+}
+
+
+// *** Ancien code ***//
+
+// body {
+//   margin: 1rem auto;
+//   max-width: 1200px;
+//   font-family: $font-1;
+//   color: $black;
+// }
+// button {
+//   cursor: pointer;
+// }
+// li {
+//   list-style-type: none;
+// }
+// a {
+//   text-decoration: none;
+//   color: $black;
+//   cursor: pointer;
+// }
+// a:visited {
+//   color:$black;
+// }
+// .home, .contact {
+//   display: flex;
+
+//   @media screen and (max-width: 850px){
+//     display: block !important;
+//   }
+// }
+// .homeContent, .contactContent {
+//   margin-left: .4rem;
+
+//   @media screen and (max-width: 850px){
+//     margin-left: 0 !important;
+//   }
+// }
