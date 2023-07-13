@@ -23,8 +23,8 @@ Visitez l'éboche de mon site [Mondistri.re](https://nickosss97435.github.io/rea
 
 # Memo
 
-(echo "# react-deploy" >> README.md
-git init
+echo "# react-deploy" >> [README.md]
+(git init
 git add .
 git commit -m "first commit"
 git branch -M main
@@ -38,4 +38,4 @@ git branch -M main
 git push -u origin main 
 
 npm run buil
-npm run deploy)
+npm run deploy).
