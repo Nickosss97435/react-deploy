@@ -13,14 +13,14 @@ app.post('/envoyer-email', (req, res) => {
     service: 'ssl0.ovh.net',
     auth: {
       user: 'contact@mondistri.re',
-      pass: '3ed5;QT:5',
+      pass: '123456',
     },
   });
 
   // Options du courrier électronique
   const options = {
     from: 'contact@mondistri.re',
-    to: 'nquerat@mondistri.re',
+    to: 'info@mondistri.re',
     subject: 'Nouveau message de formulaire de contact',
     text: `
       Nom: ${nom}
