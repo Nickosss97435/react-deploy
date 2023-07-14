@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { TypeAnimation } from 'react-type-animation';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
 
-import Section from '../components/HOC/Section';
+import Service from "../components/sections/Service/Service";
+import Carousel from "../components/sections/Carousel";
+import Facts from "../components/sections/Facts";
+
 import bgImage from '../assets/img/la_reunion.png';
 
 const home = () => {
   return (
-    <Section id='home'>
-     
+    <Fragment >
+      <div className='home'>
         <motion.div initial={{ opacity: 0, y: '-100px' }}
             animate={{ opacity: 10, y: 0 }}
             transition={{ duration: 2.5 }}
@@ -52,8 +55,11 @@ const home = () => {
             </motion.div>
           </div>
         </motion.div>
-      
-    </Section>
+        </div>
+          <Service />
+          <Carousel />
+          <Facts />
+    </Fragment>
   );
 };
 

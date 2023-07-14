@@ -20,6 +20,8 @@ Visitez l'éboche de mon site [Mondistri.re](https://nickosss97435.github.io/rea
     npm i react-scroll
     npm i react-type-animation
     npm i sass
+    npm i react-hook-form
+    npm i @emailjs/browser --save
 
 # Memo
 

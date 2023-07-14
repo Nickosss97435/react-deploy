@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 
-import Section from '../../../HOC/Section';
-import Img1 from '../../../assets/img/Carousel/tempimage01.jpeg';
-import Img2 from '../../../assets/img/Carousel/tempimage02.jpeg';
-import Img3 from '../../../assets/img/Carousel/tempimage03.jpeg';
+import Section from '../HOC/Section';
+import Img1 from '../../assets/img/Carousel/tempimage01.jpeg';
+import Img2 from '../../assets/img/Carousel/tempimage02.jpeg';
+import Img3 from '../../assets/img/Carousel/tempimage03.jpeg';
 
 class Carousel extends Component {
   constructor(props) {

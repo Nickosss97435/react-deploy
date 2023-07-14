@@ -87,7 +87,6 @@ const Footer = () => {
                   <i className='fas fa-envelope px-2' />
                   <i className='' />info@mondistri.re
                 </a>
-                {/* <div className='p-2 text-end'> */}
                 <a href='https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fmondistri%2F' className='text-light px-2'>
                   <i className='fab fa-facebook-f px-2' />
                 </a>
@@ -103,7 +102,6 @@ const Footer = () => {
                 <a href='https://www.linkedin.com/company/hzh-mondistri/mycompany/' className='text-light p-2'>
                   <i className='fab fa-linkedin px-2' />
                 </a>
-                {/* </div> */}
               </div>
             </div>
           </div>

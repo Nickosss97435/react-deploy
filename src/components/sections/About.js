@@ -1,11 +1,13 @@
-import React from 'react';
-import Section from '../../../HOC/Section';
-import aboutImage from '../../../assets/img/Mondistri-re.jpg';
-import MD_Ouest from '../../../assets/img/mondistri_avant03.jpg'
+import React, {Fragment} from 'react';
+import Facts from "../sections/Facts";
+import aboutImage from '../../assets/img/Mondistri-re.jpg';
+import MD_Ouest from '../../assets/img/mondistri_avant03.jpg';
+
 
 const about = () => {
   return (
-    <Section id='about'>
+    <Fragment>
+    <div id='about'>
       <div className='container pt-2 pb-5'>
         <div className='section-header pt-5 pb-5 text-center'>
           <h3 className='section-title'>
@@ -52,7 +54,9 @@ const about = () => {
 </div>
 
       </div>
-    </Section>
+    </div>
+    <Facts />
+    </Fragment>
   );
 };
 

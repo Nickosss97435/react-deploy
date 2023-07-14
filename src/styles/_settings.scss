@@ -44,7 +44,6 @@ body {
 .service-box {
   padding: 2rem;
   border: 1px solid #eef1f5;
-  // box-shadow: 2px 2px 4px #e9ebef;
   margin-bottom: 1rem;
   background: white;
   .service-icon {
@@ -81,44 +80,8 @@ body {
   z-index: 999;
   @media (min-width: 768px) {
     position: absolute;
+    
   }
   
+  
 }
-
-
-// *** Ancien code ***//
-
-// body {
-//   margin: 1rem auto;
-//   max-width: 1200px;
-//   font-family: $font-1;
-//   color: $black;
-// }
-// button {
-//   cursor: pointer;
-// }
-// li {
-//   list-style-type: none;
-// }
-// a {
-//   text-decoration: none;
-//   color: $black;
-//   cursor: pointer;
-// }
-// a:visited {
-//   color:$black;
-// }
-// .home, .contact {
-//   display: flex;
-
-//   @media screen and (max-width: 850px){
-//     display: block !important;
-//   }
-// }
-// .homeContent, .contactContent {
-//   margin-left: .4rem;
-
-//   @media screen and (max-width: 850px){
-//     margin-left: 0 !important;
-//   }
-// }

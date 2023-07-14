@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaUserFriends, FaShoppingCart, FaUikit, FaBuilding } from 'react-icons/fa';
 
-import Section from '../../../HOC/Section';
-import bgImage from '../../../assets/img/facts_bg.jpg';
+import Section from '../HOC/Section';
+import bgImage from '../../assets/img/facts_bg.jpg';
 
 const Facts = () => {
   return (
@@ -14,29 +14,29 @@ const Facts = () => {
         <div className='container pt-5 pb-4'>
           <div className='row'>
             <div className='col-sm-6 col-md-3 text-center mb-4'>
-              <div className='mb-2 facts-icon'>
+              <div className='mb-2 facts-icon text-danger'>
                 <FaUserFriends />
               </div>
               <h4 className='facts-counter text-danger'>26</h4>
               <h5 className='facts-title text-danger'>Salariés</h5>
             </div>
             <div className='col-sm-6 col-md-3 text-center mb-4'>
-              <div className='mb-2 facts-icon'>
-                <i className='fas fa-shop' />
+              <div className='mb-2 facts-icon  text-danger'>
+                <i className='fas fa-shop text-danger' />
                 <FaShoppingCart />
               </div>
               <h4 className='facts-counter text-danger'>4</h4>
               <h5 className='facts-title text-danger'>Agences</h5>
             </div>
             <div className='col-sm-6 col-md-3 text-center mb-4'>
-              <div className='mb-2 facts-icon'>
+              <div className='mb-2 facts-icon text-danger'>
                 <FaBuilding />
               </div>
               <h4 className='facts-counter text-danger'>2</h4>
               <h5 className='facts-title text-danger'>Centrales d'achat</h5>
             </div>
             <div className='col-sm-6 col-md-3 text-center mb-4'>
-              <div className='mb-2 facts-icon'>
+              <div className='mb-2 facts-icon text-danger'>
                 <FaUikit />
               </div>
               <h4 className='facts-counter text-danger'>+ de 140 000</h4>

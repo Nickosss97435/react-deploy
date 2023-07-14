@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-import { Link } from "react-router-dom";
-
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaTimes, FaBars } from "react-icons/fa";
 import Logo from "../../../assets/img/Logo.png";
 
 const Navbar = () => {
@@ -27,57 +24,62 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
-    <nav className={`navigation navbar navbar-expand-md bg-light ${navClass}`}>
+    <nav className={`navbar navbar-expand-md bg-light ${navClass}`}>
       <div className="container">
-        <a className="navbar-brand" href="/">
-          <img style={{ width: "20%", height: "auto" }} src={Logo} alt="Logo" />
-          < faCircle/>
-          <span>re</span>
-        </a>
-        <div
-          className={`navbar-toggler nav-icon ${toggledNav ? "open" : ""}`}
-          onClick={toggleNav}
-        >
-          <span />
-          <span />
-          <span />
+        <div className="d-flex align-items-center justify-content-between w-100">
+          <a className="navbar-brand" href="/">
+            <img
+              style={{ width: "30%", height: "auto" }}
+              src={Logo}
+              alt="Logo"
+            />
+            <span className="point align-middle">
+              <i className="fas fa-circle fa-xs ml-1 text-danger px-1 mt-2" />
+              re
+            </span>
+          </a>
+          <button
+            className={`navbar-toggler ${toggledNav ? "collapsed" : ""}`}
+            type="button"
+            onClick={toggleNav}
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded={toggledNav ? "true" : "false"}
+            aria-label="Toggle navigation"
+          >
+            {toggledNav ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
-        <div className={`collapse navbar-collapse ${toggledNav ? "show" : ""}`}>
+        <div
+          className={`collapse navbar-collapse ${toggledNav ? "show" : ""}`}
+          id="navbarCollapse"
+        >
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link to="/" offset={-120} classes="nav-link">
+              <a href="/" className="nav-link">
                 Accueil
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link to="/Contact" offset={-120} classes="nav-link">
+              <a href="/Contact" className="nav-link">
                 Contact
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link target="about" classes="nav-link">
+              <a href="/Bibliotheque" className="nav-link">
+                Bibliotheque
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/about" className="nav-link">
                 À<span>propos</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link target="services" classes="nav-link">
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link target="carousel" classes="nav-link">
-                Images
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link target="librairie" classes="nav-link">
-                Librairie
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <a href="http://shop.mondistri.re" className="nav-link">
-                <i className="facts-icon " />
                 <FaShoppingCart />
               </a>
             </li>
