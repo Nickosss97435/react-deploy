@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/react-deploy/static/css/main.09b9526d.css",
-    "main.js": "/react-deploy/static/js/main.f93108a4.js",
+    "main.css": "/react-deploy/static/css/main.c9ed22e8.css",
+    "main.js": "/react-deploy/static/js/main.e91c2c3b.js",
+    "static/media/Mondistri-re.jpg": "/react-deploy/static/media/Mondistri-re.40f06d45fde7cb9117ef.jpg",
+    "static/media/mondistri_avant03.jpg": "/react-deploy/static/media/mondistri_avant03.62ef3306ef8da7c3b933.jpg",
     "static/media/la_reunion.png": "/react-deploy/static/media/la_reunion.128e5744b6a252b7fb4e.png",
     "static/media/Logo.png": "/react-deploy/static/media/Logo.c20f0354325b13a189ba.png",
+    "static/media/facts_bg.jpg": "/react-deploy/static/media/facts_bg.da56084db63a08d0c6d4.jpg",
     "static/media/fa-solid-900.ttf": "/react-deploy/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/react-deploy/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/tempimage02.jpeg": "/react-deploy/static/media/tempimage02.0f6abfab87152217aa9c.jpeg",
+    "static/media/tempimage03.jpeg": "/react-deploy/static/media/tempimage03.381e01009fbd788f76e2.jpeg",
     "static/media/fa-solid-900.woff2": "/react-deploy/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/tempimage01.jpeg": "/react-deploy/static/media/tempimage01.8b9ec9c62aa45240ee76.jpeg",
+    "static/media/blurred-image-1.jpg": "/react-deploy/static/media/blurred-image-1.98c0e5e19751c2476706.jpg",
     "static/media/fa-brands-400.woff2": "/react-deploy/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/404-ship-crash-color.jpg": "/react-deploy/static/media/404-ship-crash-color.64c0f026daa8cba9ae8e.jpg",
     "static/media/fa-regular-400.ttf": "/react-deploy/static/media/fa-regular-400.d87474231f4192884802.ttf",
     "static/media/JosefinSans-Medium.ttf": "/react-deploy/static/media/JosefinSans-Medium.3a0ce90aeb02cf6a189b.ttf",
     "static/media/black-background-wood-clean-wallpaper-preview.jpg": "/react-deploy/static/media/black-background-wood-clean-wallpaper-preview.517e9e5c16ce5ed04555.jpg",
     "static/media/fa-regular-400.woff2": "/react-deploy/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
     "index.html": "/react-deploy/index.html",
-    "main.09b9526d.css.map": "/react-deploy/static/css/main.09b9526d.css.map",
-    "main.f93108a4.js.map": "/react-deploy/static/js/main.f93108a4.js.map"
+    "main.c9ed22e8.css.map": "/react-deploy/static/css/main.c9ed22e8.css.map",
+    "main.e91c2c3b.js.map": "/react-deploy/static/js/main.e91c2c3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.09b9526d.css",
-    "static/js/main.f93108a4.js"
+    "static/css/main.c9ed22e8.css",
+    "static/js/main.e91c2c3b.js"
   ]
 }
