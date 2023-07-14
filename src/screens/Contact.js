@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser"; /* importer emailjs après l'avoir téléchargé*/
 
 import bgImage from '../assets/img/blurred-image-1.jpg';
 
@@ -16,8 +16,8 @@ const Contact = () => {
       const onSubmit = (data) => {
         // console.log(data);
         emailjs.send(
-            'service_wsk4bo8',
-            'template_r64tm5b',
+            'service_hjg3gj2',/* ajouter le service donné par emailjs*/
+            'template_g55hg6k',/* ajouter la template donné par emailjs*/
             {
                 subject: data.subject,
                 name: data.name,
@@ -27,7 +27,7 @@ const Contact = () => {
                 email: data.email,
                 message: data.message
             },
-            '1xQtduIT5CLSugC_O'
+            '1FGh54GHGJJGH,_O'/* ajouter lla clé publique donné par emailjs*/
         )
         alert(JSON.stringify("Votre message à bien été envoyé !"));
       }; // votre fonction de soumission de formulaire qui s'invoquera après une validation réussie
